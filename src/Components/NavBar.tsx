@@ -1,13 +1,37 @@
-'use client'
+"use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { Menu, MenuItem, HoveredLink } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
-const NavBar = () => {
+const NavBar = ({ className }: { className?: string }) => {
+  const [active, setActive] = useState<string | null>(null);
   return (
-    <div>
-      <div></div>
+    <div
+      className={cn("fixed top-6 inset-x-0 max-w-xl mx-auto z-50", className)}
+    >
+      <Menu setActive={setActive}>
+        <MenuItem setActive={setActive} active={active} item="Home">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/home">Home</HoveredLink>
+          </div>
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Projects">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/projects">projects</HoveredLink>
+          </div>
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Tools">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/Tools">Tools</HoveredLink>
+          </div>
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Contact">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/Contact">Contact</HoveredLink>
+          </div>
+        </MenuItem>
+      </Menu>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
