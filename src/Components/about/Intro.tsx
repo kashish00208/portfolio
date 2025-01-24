@@ -17,7 +17,7 @@ const about = () => {
         <h1 className="text-black text-4xl font-bold font-sans my-5">
           Kashish Gupta
         </h1>
-        <p className="text-gray-700 text-sm text-center">
+        <p className="text-gray-600 text-sm text-center bold">
           A software engineer driven by a desire to solve complex problems and
           build cutting-edge applications
         </p>
