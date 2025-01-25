@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 const about = () => {
   return (
-    <div className="w-1/4 bg-white fixed top-28 ml-20 mr-9 h-auto rounded-xl">
+    <div className="w-1/4 bg-white bg-opacity-85 fixed top-20 ml-20 mr-9 h-auto rounded-xl">
       <div className="my-5 flex justify-center items-center flex-col  p-3">
         <div className="">
           <Image
@@ -18,7 +18,7 @@ const about = () => {
           Kashish Gupta
         </h1>
         <p className="text-gray-600 text-xs text-center bold">
-          A software engineer driven by a desire to solve complex problems and
+          A software developer driven by a desire to solve complex problems and
           build cutting-edge applications
         </p>
       </div>

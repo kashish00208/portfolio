@@ -14,7 +14,7 @@ const NavBar = ({ className }: { className?: string }) => {
             <HoveredLink href="/home">Home</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Projects" icon="/project.png">
+        <MenuItem setActive={setActive} active={active} item="Projects" icon="/note.png">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/projects">projects</HoveredLink>
           </div>
@@ -24,7 +24,7 @@ const NavBar = ({ className }: { className?: string }) => {
             <HoveredLink href="/Tools">Tools</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Contact" icon="/note.png">
+        <MenuItem setActive={setActive} active={active} item="Contact" icon="/project.png">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/Contact">Contact</HoveredLink>
           </div>
