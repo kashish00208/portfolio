@@ -11,12 +11,12 @@ const NavBar = ({ className }: { className?: string }) => {
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Home" icon="/home.png">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/home">Home</HoveredLink>
+            <HoveredLink href="/Homepage">Home</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Projects" icon="/note.png">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/projects">projects</HoveredLink>
+            <HoveredLink href="/Project">projects</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Tools" icon="/tool.png">
@@ -24,9 +24,9 @@ const NavBar = ({ className }: { className?: string }) => {
             <HoveredLink href="/Tools">Tools</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Contact" icon="/project.png">
+        <MenuItem setActive={setActive} active={active} item="Connect" icon="/project.png">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/Contact">Contact</HoveredLink>
+            <HoveredLink href="/Connect">Contact</HoveredLink>
           </div>
         </MenuItem>
       </Menu>
