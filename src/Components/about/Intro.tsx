@@ -19,7 +19,7 @@ const about = () => {
         </h1>
         <p className="text-gray-600 text-xs text-center bold">
           A software developer driven by a desire to solve complex problems and
-          build cutting-edge applications
+          build cutting-edge applications.
         </p>
       </div>
     </div>
