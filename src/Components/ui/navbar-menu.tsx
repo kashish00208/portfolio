@@ -18,11 +18,13 @@ export const MenuItem = ({
   active,
   item,
   children,
+  icon,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
   children?: React.ReactNode;
+  icon: string;
 }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
@@ -30,7 +32,13 @@ export const MenuItem = ({
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
       >
-        {item}
+        <Image
+          src={icon}
+          alt={`${item} icon`}
+          width={20}
+          height={20}
+          className="inline-block invert bg-white"
+        />
       </motion.p>
       {active !== null && (
         <motion.div
@@ -42,11 +50,11 @@ export const MenuItem = ({
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
+                layoutId="active"
                 className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-sm"
               >
                 <motion.div
-                  layout // layout ensures smooth animation
+                  layout 
                   className="w-max h-full p-4"
                 >
                   {children}
@@ -69,8 +77,8 @@ export const Menu = ({
 }) => {
   return (
     <nav
-      onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-3 py-5 "
+      onMouseLeave={() => setActive(null)} 
+      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-evenly space-x-6 px-2 py-3 "
     >
       {children}
     </nav>
@@ -95,7 +103,7 @@ export const ProductItem = ({
         width={140}
         height={70}
         alt={title}
-        className="flex-shrink-0 rounded-md shadow-2xl"
+        className="flex-shrink-0 rounded-md shadow-xl"
       />
       <div>
         <h4 className="text-sm font-bold mb-1 text-black dark:text-white">
