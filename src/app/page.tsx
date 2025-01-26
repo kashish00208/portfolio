@@ -10,8 +10,9 @@ export default function Home() {
       <div>
       <Intro />
       </div>
-      <div className="w-2/4  top-20 left-96 ml-16 fixed h-auto rounded-xl">
+      <div className="mt-10 mb-20 w-2/4 top-20 left-96 ml-16  h-auto rounded-xl">
       <Homepage/>
+      <Project/>
       </div>
     </>
   );
