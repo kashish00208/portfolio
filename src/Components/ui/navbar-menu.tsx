@@ -26,39 +26,38 @@ export const MenuItem = ({
   item: string;
   children?: React.ReactNode;
   icon: string;
-  href:string;
+  href: string;
 }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative ">
-      <motion.p
-        transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
-      >
-        <Image
-          src={icon}
-          alt={`${item} icon`}
-          width={20}
-          height={20}
-          className="inline-block invert bg-white"
-        />
-      </motion.p>
+      <Link href={href}>  {/* Wrapping the clickable area with Link */}
+        <motion.p
+          transition={{ duration: 0.3 }}
+          className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
+        >
+          <Image
+            src={icon}
+            alt={`${item} icon`}
+            width={20}
+            height={20}
+            className="inline-block invert bg-white"
+          />
+        </motion.p>
+      </Link>
       {active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={transition}
+          transition={{ duration: 0.3 }}
         >
           {active === item && (
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
-                transition={transition}
+                transition={{ duration: 0.3 }}
                 layoutId="active"
                 className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xs"
               >
-                <motion.div
-                  layout 
-                  className="w-max h-full p-4"
-                >
+                <motion.div layout className="w-max h-full p-4">
                   {children}
                 </motion.div>
               </motion.div>
@@ -69,6 +68,7 @@ export const MenuItem = ({
     </div>
   );
 };
+
 
 export const Menu = ({
   setActive,
