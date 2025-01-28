@@ -13,8 +13,8 @@ const page = () => {
         solutions.
       </p>
       <div className="icons ">
-        <ImpLinks description="Leetcode" href="https://leetcode.com/u/kashish00208/" src="/leetcode.png" />
-        <ImpLinks description="Github" href="https://github.com/kashish00208" src="/github.png" />
+        <ImpLinks description="Leetcode" href="https://leetcode.com/u/kashish00208/" src="/leetcode.jpeg" />
+        <ImpLinks description="Github" href="https://github.com/kashish00208" src="/github.jpeg" />
         <ImpLinks description="Linkedin" href="https://www.linkedin.com/in/kashish00208/" src="/linkedin.png" />
       </div>
     </div>
