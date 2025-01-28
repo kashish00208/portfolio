@@ -12,7 +12,7 @@ export const ImpLinks = ({
 }) => {
   return (
     <Link href={href} className="space-x-2 " >
-      <Image src={src} width={30} height={30} alt={description} className="rounded-lg"/>
+      <Image src={src} width={30} height={30} alt={description} className="rounded-lg "/>
     </Link>
   );
 };
