@@ -7,12 +7,8 @@ import Intro from '@/components/about/Intro'
 export default function Home() {
   return (
     <>
-      <div>
-      <Intro />
-      </div>
       <div className="mt-10 mb-20 w-2/4 top-20 left-96 ml-16  h-auto rounded-xl">
       <Homepage/>
-      <Project/>
       </div>
     </>
   );
