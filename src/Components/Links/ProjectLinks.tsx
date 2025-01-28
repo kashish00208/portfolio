@@ -19,7 +19,7 @@ export const ProjectLinks = ({
           <Image
             src={src}
             alt={title}
-            width={120}
+            width={100}
             height={100}
             className="rounded-md"
           />
@@ -28,7 +28,6 @@ export const ProjectLinks = ({
           <p className="text-2xl font-bold text-white ">{title}</p>
           <p className="text-white text-opacity-50">{description}</p>
         </div>
-        
       </div>
     </Link>
   );
