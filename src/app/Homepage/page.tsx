@@ -1,10 +1,8 @@
 'use client'
-import React, { useState } from "react";
-import { Menu, MenuItem, HoveredLink } from "@/components/ui/navbar-menu";
-import { cn } from "@/utils/cn";
-import { Client } from "appwrite";
+import React from "react";
+import Image from "next/image";
+import ImpLinks from "@/components/Links/ImpLink";
 const page = () => {
-  const [active, setActive] = useState<string | null>(null);
   return (
     <div className="mt-10 mb-20 w-2/4  top-20 left-96 ml-16 fixed h-auto rounded-xl">
       <p className="text-white text-8xl font-semibold">SOFTWARE </p>
@@ -15,16 +13,9 @@ const page = () => {
         solutions.
       </p>
       <div className="icons ">
-        <MenuItem
-          setActive={setActive}
-          active={active}
-          item="Home"
-          icon="/home.png"
-        >
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="https://leetcode.com/u/kashish00208/"></HoveredLink>
-          </div>
-        </MenuItem>
+        <ImpLinks description="Leetcode" href="https://leetcode.com/u/kashish00208/" src="/leetcode.png" />
+        <ImpLinks description="Github" href="https://github.com/kashish00208" src="/github.png" />
+        <ImpLinks description="Linkedin" href="https://www.linkedin.com/in/kashish00208/" src="/linkedin.png" />
       </div>
     </div>
   );
