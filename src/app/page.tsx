@@ -7,10 +7,7 @@ import Intro from '@/components/about/Intro'
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col">
-      <Intro/>  
       <Homepage/>
-      </div>
     </> 
   );
 }
