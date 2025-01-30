@@ -2,9 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import ImpLinks from "@/components/Links/ImpLink";
+
 const page = () => {
   return (
-    <div className="mt-10 mb-20 w-2/4  top-20 left-96 ml-16 fixed h-auto rounded-xl">
+    <div className="mt-10 mb-20 w-2/4 h-auto rounded-xl fixed top-20 left-96 ml-16 overflow-y-auto max-h-[calc(100vh-40px)]">
       <p className="text-white text-8xl font-semibold">SOFTWARE </p>
       <p className="text-white text-7xl text-opacity-50">DEVELOPER</p>
       <p className="mt-7 max-w-96 text-white text-opacity-45 text-lg">
