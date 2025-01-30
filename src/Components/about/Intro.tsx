@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import ImpLinks from "../Links/ImpLink";
 const about = () => {
   return (
     <div className="md:w-1/4 bg-white bg-opacity-85 mt-24 mx-9  md:md:ml-20 md:mr-9 h-auto rounded-xl">
@@ -22,6 +23,23 @@ const about = () => {
           build cutting-edge applications.
         </p>
       </div>
+      <div className="icons flex justify-center gap-8 mt-1">
+              <ImpLinks
+                description="Github"
+                href="https://github.com/kashish00208"
+                src="/github.jpeg"
+              />
+              <ImpLinks
+                description="Leetcode"
+                href="https://leetcode.com/u/kashish00208/"
+                src="/leetcode.jpeg"
+              />
+              <ImpLinks
+                description="Linkedin"
+                href="https://www.linkedin.com/in/kashish00208/"
+                src="/linkedin.png"
+              />
+            </div>
     </div>
   );
 };
