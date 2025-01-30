@@ -2,9 +2,9 @@
 import React from "react";
 import ImpLinks from "@/components/Links/ImpLink";
 import Project from "@/app/Project/page";
-import tools from "@/app/Tools/page";
 import Homepage from "@/app/Homepage/page";
 import Connect from "@/app/Connect/page";
+import Tools from "@/app/Tools/page";
 import Intro from "@/components/about/Intro";
 
 const page = () => {
@@ -42,6 +42,7 @@ const page = () => {
         </div>
       </div>
       <Project />
+      <Tools />
     </>
   );
 };
