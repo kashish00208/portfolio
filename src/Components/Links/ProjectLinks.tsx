@@ -14,13 +14,13 @@ export const ProjectLinks = ({
 }) => {
   return (
     <Link href={href}>
-      <div className="flex my-5 hover:bg-slate-700 hover:bg-opacity-10 p-3 rounded-md w-3/4">
+      <div className="flex  hover:bg-slate-700 hover:bg-opacity-10 p-3 rounded-md w-full">
         <div className="mr-10">
           <Image
             src={src}
             alt={title}
-            width={100}
-            height={100}
+            width={150}
+            height={150}
             className="rounded-md"
           />
         </div>
