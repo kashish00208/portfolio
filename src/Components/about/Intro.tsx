@@ -5,7 +5,7 @@ import ImpLinks from "../Links/ImpLink";
 
 const about = () => {
   return (
-    <div className="md:w-1/4 bg-white bg-opacity-85 mt-36 md:mt-10 lg:mt-10 mx-9 md:ml-20 lg:ml-20 md:mr-20 lg:mr-20 h-auto rounded-xl md:fixed lg:fixed">
+    <div className="md:w-1/4 bg-white bg-opacity-85 mt-36 md:mt-10 lg:mt-10 mx-9 md:ml-20 lg:ml-20 md:mr-20 lg:mr-20 h-auto rounded-xl md:fixed lg:fixed ">
       <div className="my-5 flex justify-center items-center flex-col p-6">
         <div className="">
           <Image

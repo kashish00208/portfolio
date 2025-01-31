@@ -4,7 +4,10 @@ import Intro from "@/components/about/Intro";
 const page = () => {
   return (
     <>
-      <div className="m-7 text-center flex flex-col lg:flex-row ">
+    <div className="hidden md:block">
+    <Intro />
+    </div>
+      <div className="m-7 text-center flex flex-col lg:flex-row mt-20">
         <div className="flex-1 md:ml-96 md:mt-20 md:text-start">
           <div
             className="md:ml-10 lg:ml-10"

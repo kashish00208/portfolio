@@ -4,10 +4,12 @@ import ImpLinks from "@/components/Links/ImpLink";
 import Project from "@/app/Project/page";
 import Tools from "@/app/Tools/page";
 import Connect from "@/app/Connect/page";
+import Intro from "@/components/about/Intro"
 
 const page = () => {
   return (
     <>
+    <Intro/>
       <div className="m-7 text-center flex flex-col lg:flex-row ">
         <div className="flex-1 md:ml-96 md:mt-20 md:text-start">
           <div className="md:ml-10 lg:ml-10">

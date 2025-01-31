@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
 import Skill from "@/components/Links/Skill";
-
+import Intro from '@/components/about/Intro'
 const page = () => {
   return (
     <>
-      <div className="m-7 text-center flex flex-col lg:flex-row my-10">
+    <div className="hidden md:block"><Intro/></div>
+      <div className="m-7 text-center flex flex-col lg:flex-row my-10 mt-20">
         <div className="flex-1 md:ml-96 md:mt-20 md:text-start">
           <div className="md:ml-10 lg:ml-10">
             <p className="text-white text-5xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold ">
