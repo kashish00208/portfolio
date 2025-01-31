@@ -34,7 +34,12 @@ const page = () => {
                 href="https://github.com/kashish00208/React-Projects/tree/main/weather-app"
                 src="/project1.jpg"
               />
-              
+              <ProjectLinks
+                title="Portfolio"
+                description="Portfolio Web"
+                href="https://github.com/kashish00208/portfolio"
+                src="/project4.jpg"
+              />
             </div>
           </div>
         </div>

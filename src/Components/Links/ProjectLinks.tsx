@@ -22,6 +22,7 @@ export const ProjectLinks = ({
             width={150}
             height={150}
             className="rounded-md"
+            style={{ objectFit: "cover", width: "150px", height: "100px" }}
           />
         </div>
         <div className="flex flex-col justify-center gap-1 ">

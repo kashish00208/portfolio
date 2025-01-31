@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 import ImpLinks from "@/components/Links/ImpLink";
-import Intro from "@/components/about/Intro";
+import Project from "@/app/Project/page";
+import Tools from "@/app/Tools/page";
+import Connect from "@/app/Connect/page";
 
 const page = () => {
   return (
@@ -40,6 +42,11 @@ const page = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="md:hidden lg:hidden">
+        <Project />
+        <Tools />
+        <Connect />
       </div>
     </>
   );
