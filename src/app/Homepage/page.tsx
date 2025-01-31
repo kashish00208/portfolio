@@ -6,7 +6,6 @@ import Intro from "@/components/about/Intro";
 const page = () => {
   return (
     <>
-      <Intro />
       <div className="m-7 text-center flex flex-col lg:flex-row ">
         <div className="flex-1 md:ml-96 md:mt-20 md:text-start">
           <p className="text-white text-5xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold">
