@@ -1,11 +1,13 @@
 "use client";
 import React from "react";
 import Skill from "@/components/Links/Skill";
-import Intro from '@/components/about/Intro'
+import Intro from "@/components/about/Intro";
 const page = () => {
   return (
     <>
-    <div className="hidden md:block"><Intro/></div>
+      <div className="hidden md:block">
+        <Intro />
+      </div>
       <div className="m-7 text-center flex flex-col lg:flex-row my-10 mt-20">
         <div className="flex-1 md:ml-96 md:mt-20 md:text-start">
           <div className="md:ml-10 lg:ml-10">
@@ -17,15 +19,42 @@ const page = () => {
             </p>
             <div>
               <Skill title="NextJs" href="https://nextjs.org/" src="/sk1.jpg" />
-              <Skill title="TypeScript" href="https://www.typescriptlang.org/" src="/sk2.jpg" />
-              <Skill title="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" src="/sk3.png" />
-              <Skill title="C++" href="https://www.w3schools.com/cpp/" src="/sk4.webp" />
-              <Skill title="NodeJS" href="https://nodejs.org/en" src="/sk5.webp" />
-              <Skill title="MongoDb" href="https://www.mongodb.com/" src="/sk6.webp" />
-              <Skill title="Express" href="https://expressjs.com/" src="/sk7.webp" />
+              <Skill
+                title="TypeScript"
+                href="https://www.typescriptlang.org/"
+                src="/sk2.jpg"
+              />
+              <Skill
+                title="JavaScript"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                src="/sk3.png"
+              />
+              <Skill
+                title="C++"
+                href="https://www.w3schools.com/cpp/"
+                src="/sk4.webp"
+              />
+              <Skill
+                title="NodeJS"
+                href="https://nodejs.org/en"
+                src="/sk5.webp"
+              />
+              <Skill
+                title="MongoDb"
+                href="https://www.mongodb.com/"
+                src="/sk6.webp"
+              />
+              <Skill
+                title="Express"
+                href="https://expressjs.com/"
+                src="/sk7.webp"
+              />
             </div>
           </div>
         </div>
+      </div>
+      <div className="block md:hidden">
+        <Intro />
       </div>
     </>
   );

@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import ImpLinks from "@/components/Links/ImpLink";
 import Intro from "@/components/about/Intro";
 
 const page = () => {
@@ -21,6 +20,10 @@ const page = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="block md:hidden">
+
+        <Intro />
       </div>
     </>
   );
