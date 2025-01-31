@@ -15,8 +15,7 @@ const page = () => {
             <p className="text-white text-3xl lg:text-5xl text-opacity-50">
               PROJECTS
             </p>
-            <div className="icons flex flex-col justify-center md:justify-start my-10">
-              
+            <div className="icons flex flex-col justify-center md:justify-start my-10 gap-5">
               <ProjectLinks
                 title="Aconews"
                 description="A news website"
@@ -35,6 +34,7 @@ const page = () => {
                 href="https://github.com/kashish00208/React-Projects/tree/main/weather-app"
                 src="/project1.jpg"
               />
+              
             </div>
           </div>
         </div>
