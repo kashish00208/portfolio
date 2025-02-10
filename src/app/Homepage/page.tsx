@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import ImpLinks from "@/components/Links/ImpLink";
-import Connect from "@/app/Connect/page";
 import Intro from "@/components/about/Intro"
+import ImpLinks from "@/components/Links/ImpLink";
+import Connect from '@/app/Connect/page'
 
 const page = () => {
   return (
