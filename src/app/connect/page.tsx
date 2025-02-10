@@ -76,7 +76,7 @@ const page = () => {
               TOGETHER
             </p>
 
-            <div className="flex flex-col mt-5">
+            <div className="flex flex-col mt-5 text-start">
               <form onSubmit={handleSubmit} className="">
                 <label className="">
                   Name:
@@ -124,6 +124,7 @@ const page = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };

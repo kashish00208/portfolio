@@ -2,6 +2,7 @@
 import React from "react";
 import Skill from "@/components/Links/Skill";
 import Intro from "@/components/about/Intro";
+import Connect from '@/app/Connect/page'
 const page = () => {
   return (
     <>
@@ -52,6 +53,10 @@ const page = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="md:hidden lg:hidden">
+        <Connect />
+        <Intro/>
       </div>
      
     </>

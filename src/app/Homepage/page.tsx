@@ -46,8 +46,6 @@ const page = () => {
         </div>
       </div>
       <div className="md:hidden lg:hidden">
-        <Project />
-        <Tools />
         <Connect />
       </div>
     </>
