@@ -23,7 +23,10 @@
 .hide-scrollbar {
   -ms-overflow-style: none; 
   scrollbar-width: none;  
-}
 
+}
+.bg-grey{
+  background-color:var(--foreground)
+}
 
  

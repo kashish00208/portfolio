@@ -45,9 +45,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="block md:hidden">
-        <Intro />
-      </div>
+     
     </>
   );
 };
