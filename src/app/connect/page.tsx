@@ -16,8 +16,6 @@ const page = () => {
     email: "",
     message: "",
   });
-
-  const [status, setStatus] = useState<string>("");
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -31,12 +29,7 @@ const page = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.message) {
-      setStatus("All fields are required!");
-      return;
-    }
 
-    setStatus("Sending message...");
 
     emailjs
       .sendForm(
@@ -47,7 +40,6 @@ const page = () => {
       )
       .then(
         () => {
-          setStatus("Message sent successfully!");
           setFormData({
             name: "",
             email: "",
@@ -56,7 +48,6 @@ const page = () => {
         },
         (error: Error) => {
           console.log("FAILED...", error);
-          setStatus("Failed to send message. Please try again later.");
         }
       );
   };
