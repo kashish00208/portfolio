@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import ImpLinks from "../Links/ImpLink";
 
 const about = () => {
   return (
