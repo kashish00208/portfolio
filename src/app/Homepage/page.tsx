@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Intro from "@/components/about/Intro"
+import Intro from "@/components/Intro"
 import ImpLinks from "@/components/Links/ImpLink";
 import Connect from '@/app/Connect/page'
 

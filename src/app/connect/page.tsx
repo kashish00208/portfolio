@@ -1,5 +1,5 @@
 "use client";
-import Intro from "@/components/about/Intro";
+import Intro from "@/components/Intro";
 import emailjs from "emailjs-com";
 
 import React, { useState, ChangeEvent, FormEvent } from "react";

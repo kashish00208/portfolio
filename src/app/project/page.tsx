@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectLinks from "@/components/Links/ProjectLinks";
-import Intro from "@/components/about/Intro";
+import Intro from "@/components/Intro";
 import Connect from "@/app/Connect/page";
 const page = () => {
   return (
