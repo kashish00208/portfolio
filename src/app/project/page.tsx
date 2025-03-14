@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectLinks from "@/components/Links/ProjectLinks";
+import ProjectLinks from "@/components/ProjectLinks";
 import Intro from "@/components/Intro";
 import Connect from "@/app/Connect/page";
 const page = () => {

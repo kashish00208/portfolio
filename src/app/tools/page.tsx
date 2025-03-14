@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Skill from "@/components/Links/Skill";
+import Skill from "@/components/Skill";
 import Intro from "@/components/Intro";
 import Connect from '@/app/Connect/page'
 const page = () => {
