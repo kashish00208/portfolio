@@ -1,6 +1,6 @@
 "use client";
 import Intro from "@/components/Intro";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 import React, { useState, ChangeEvent, FormEvent } from "react";
 interface FormData {
