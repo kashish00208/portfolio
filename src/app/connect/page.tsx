@@ -1,5 +1,5 @@
 "use client";
-import Contact from '@/components/Contact' 
+import Contact from '../../components/Contact' 
 import React from 'react'
 
 const page = () => {

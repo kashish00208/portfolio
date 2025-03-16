@@ -1,7 +1,7 @@
-import Homepage from '@/app/Homepage/page'
-import Connect from'@/app/Connect/page'
-import Project from '@/app/Project/page'
-import Tools from '@/app/Tools/page'
+import Homepage from './Homepage/page'
+import Connect from'./Connect/page'
+import Project from './Project/page'
+import Tools from './Tools/page'
 
 export default function Home() {
   return (
