@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ProjectLinks from "@/components/ProjectLinks";
 import Intro from "@/components/Intro";
