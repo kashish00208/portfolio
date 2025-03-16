@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import ProjectLinks from "@/components/ProjectLinks";
-import Intro from "@/components/Intro";
-import Contact from "@/components/Contact";
+import ProjectLinks from "../../components/ProjectLinks";
+import Intro from "../../components/Intro";
+import Contact from "../../components/Contact";
 const page = () => {
   return (
     <>

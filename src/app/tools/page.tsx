@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import Skill from "@/components/Skill";
-import Intro from "@/components/Intro";
-import Contact from "@/components/Contact";
+import Skill from "../../components/Skill";
+import Intro from "../../components/Intro";
+import Contact from "../../components/Contact";
 const page = () => {
   return (
     <>
