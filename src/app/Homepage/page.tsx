@@ -2,7 +2,7 @@
 import React from "react";
 import Intro from "@/components/Intro"
 import ImpLinks from "@/components/ImpLink";
-import Connect from '@/app/Connect/page'
+import Connect from '../Connect/page'
 
 const page = () => {
   return (
