@@ -2,7 +2,7 @@
 import React from "react";
 import ProjectLinks from "@/components/ProjectLinks";
 import Intro from "@/components/Intro";
-import Connect from "@/components/Connect";
+import Contact from "@/components/Contact";
 const page = () => {
   return (
     <>
@@ -71,7 +71,7 @@ const page = () => {
         </div>
       </div>
       <div className="md:hidden lg:hidden">
-        <Connect />
+        <Contact />
         <Intro />
       </div>
     </>

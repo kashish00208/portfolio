@@ -2,7 +2,7 @@
 import React from "react";
 import Intro from "@/components/Intro"
 import ImpLinks from "@/components/ImpLink";
-import Connect from "@/components/Connect";
+import Contact from "@/components/Contact";
 
 const page = () => {
   return (
@@ -44,7 +44,7 @@ const page = () => {
         </div>
       </div>
       <div className="md:hidden lg:hidden">
-        <Connect />
+        <Contact />
       </div>
     </>
   );

@@ -1,11 +1,11 @@
 "use client";
-import Connect from '@/components/Connect';
+import Contact from '@/components/Contact' 
 import React from 'react'
 
 const page = () => {
   return (
     <>
-    <Connect/>
+    <Contact/>
     </>
   )
 }

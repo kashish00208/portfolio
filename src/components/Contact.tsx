@@ -9,7 +9,7 @@ interface FormData {
   message: string;
 }
 
-const Connect = () => {
+const Contact = () => {
   const key = process.env.MSG_KEY;
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -123,4 +123,4 @@ const Connect = () => {
   );
 };
 
-export default Connect;
+export default Contact;
