@@ -11,22 +11,22 @@ const NavBar = ({ className }: { className?: string }) => {
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Home" icon="/home.png" href="/Homepage">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/homepage">home</HoveredLink>
+            <HoveredLink href="/Homepage">Home</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Projects" icon="/note.png" href="Project">
+        <MenuItem setActive={setActive} active={active} item="Projects" icon="/note.png" href="/Project">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/project">project</HoveredLink>
+            <HoveredLink href="/Project">Troject</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Tools" icon="/tool.png" href="/Tools">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/tools">tools</HoveredLink>
+            <HoveredLink href="/Tools">Tools</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Connect" icon="/project.png" href="/Connect">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/connect">connect</HoveredLink>
+            <HoveredLink href="/Connect">Connect</HoveredLink>
           </div>
         </MenuItem>
       </Menu>
