@@ -16,7 +16,7 @@ const NavBar = ({ className }: { className?: string }) => {
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Projects" icon="/note.png" href="Project">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/Project">projects</HoveredLink>
+            <HoveredLink href="/Project">Project</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Tools" icon="/tool.png" href="/Tools">
@@ -26,7 +26,7 @@ const NavBar = ({ className }: { className?: string }) => {
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Connect" icon="/project.png" href="/Connect">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/Connect">Contact</HoveredLink>
+            <HoveredLink href="/Connect">Connect</HoveredLink>
           </div>
         </MenuItem>
       </Menu>
