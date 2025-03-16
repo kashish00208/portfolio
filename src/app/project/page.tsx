@@ -17,40 +17,62 @@ const page = () => {
             <p className="text-white text-3xl lg:text-5xl text-opacity-50">
               PROJECTS
             </p>
-            <div className="icons flex flex-col justify-center md:justify-start my-10 gap-5">
-              <ProjectLinks
-                title="Aconews"
-                description="A news website"
-                href="https://github.com/kashish00208/aconews"
-                src="/project2.jpg"
-              />
-              <ProjectLinks
-                title="helperBot"
-                description="AI powered Chatbot"
-                href="https://github.com/kashish00208/chatbot"
-                src="/project3.jpg"
-              />
-              <ProjectLinks
-                title="WeatherWave"
-                description="A realtime weather app"
-                href="https://github.com/kashish00208/React-Projects/tree/main/weather-app"
-                src="/project1.jpg"
-              />
-              <ProjectLinks
-                title="Portfolio"
-                description="Portfolio Web"
-                href="https://github.com/kashish00208/portfolio"
-                src="/project4.jpg"
-              />
+            <div className="projects-container mt-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                {[
+                  {
+                    title: "TubeSave",
+                    description: "Youtube video downloader",
+                    href: "https://yt-extractor-gold.vercel.app/",
+                    src: "/yte.jpeg",
+                  },
+                  {
+                    title: "Aconews",
+                    description: "A news website",
+                    href: "https://github.com/kashish00208/aconews",
+                    src: "/project2.jpg",
+                  },
+                  {
+                    title: "HelperBot",
+                    description: "AI powered Chatbot",
+                    href: "https://github.com/kashish00208/chatbot",
+                    src: "/project3.jpg",
+                  },
+                  {
+                    title: "WeatherWave",
+                    description: "A realtime weather app",
+                    href: "https://github.com/kashish00208/React-Projects/tree/main/weather-app",
+                    src: "/project1.jpg",
+                  },
+                  {
+                    title: "Portfolio",
+                    description: "Portfolio Web",
+                    href: "https://github.com/kashish00208/portfolio",
+                    src: "/project4.jpg",
+                  },
+
+                ].map((project, index) => (
+                  <div
+                    key={index}
+                    className="transform transition duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
+                  >
+                    <ProjectLinks
+                      title={project.title}
+                      description={project.description}
+                      href={project.href}
+                      src={project.src}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="md:hidden lg:hidden">
         <Connect />
-        <Intro/>
+        <Intro />
       </div>
-     
     </>
   );
 };
