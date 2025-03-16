@@ -14,17 +14,17 @@ const NavBar = ({ className }: { className?: string }) => {
             <HoveredLink href="/Homepage">Home</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Projects" icon="/note.png" href="/Project">
+        <MenuItem setActive={setActive} active={active} item="Projects" icon="/note.png" href="/project">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/Project">Project</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Tools" icon="/tool.png" href="/Tools">
+        <MenuItem setActive={setActive} active={active} item="Tools" icon="/tool.png" href="/tools">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/Tools">Tools</HoveredLink>
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Connect" icon="/project.png" href="/Connect">
+        <MenuItem setActive={setActive} active={active} item="Connect" icon="/project.png" href="/connect">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/Connect">Connect</HoveredLink>
           </div>
