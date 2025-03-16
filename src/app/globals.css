@@ -3,30 +3,21 @@
 @tailwind utilities;
 
 :root {
-    --background: #ffffff;
-    --foreground: #212121;
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: #0F0F0F;
-      --foreground: #F8F8F8;
-    }
-  }
-  
-  body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  --background: #0F0F0F;
+  --foreground: #F8F8F8;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .hide-scrollbar {
   -ms-overflow-style: none; 
   scrollbar-width: none;  
-
-}
-.bg-grey{
-  background-color:var(--foreground)
 }
 
- 
+.bg-grey {
+  background-color: var(--foreground);
+}
