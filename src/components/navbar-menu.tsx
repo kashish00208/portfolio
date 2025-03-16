@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
+import  { LinkProps } from "next/link";
+import { ReactNode } from "react";
 
 export const MenuItem = ({
   setActive,
@@ -111,11 +113,17 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }:any) => {
+
+interface HoveredLinkProps extends LinkProps {
+  children: ReactNode;
+  className?: string; // Optional className prop
+}
+
+export const HoveredLink = ({ children, className, ...rest }: HoveredLinkProps) => {
   return (
     <Link
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-white "
+      className={`text-neutral-700 dark:text-neutral-200 hover:text-white ${className || ""}`}
     >
       {children}
     </Link>
