@@ -1,7 +1,6 @@
 "use client";
 import Intro from "../components/Intro";
 import emailjs from "@emailjs/browser";
-import { error } from "console";
 
 import React, { useState, ChangeEvent, FormEvent } from "react";
 interface FormData {
@@ -11,7 +10,6 @@ interface FormData {
 }
 
 const Contact = () => {
-  const key = process.env.MSG_KEY;
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
