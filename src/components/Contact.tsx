@@ -31,25 +31,29 @@ const Contact = () => {
 
     const templateParams = {
       to_name: "Kashish",
-      name: formData.name, 
-      reply_to: formData.email, 
+      name: formData.name,
+      reply_to: formData.email,
       message: formData.message,
     };
     console.log("Sending email with:", templateParams);
     emailjs
-      .send("service_5j1ksxd", "template_bjmjd5a", templateParams, "Lvp-xlQeDpx0Sn1_u")
+      .send(
+        "service_5j1ksxd",
+        "template_bjmjd5a",
+        templateParams,
+        "Lvp-xlQeDpx0Sn1_u"
+      )
       .then(() => {
-        SetMsg("Email sent");
+        SetMsg("Email sent"); 
         setFormData({
           name: "",
           email: "",
           message: "",
         });
-        ()=>{
-          SetMsg("Failed in sending msg try again later");
-        }
+      })
+      .catch(() => {
+        SetMsg("Failed in sending msg, try again later"); 
       });
-      SetMsg("")
   };
 
   return (
@@ -118,10 +122,14 @@ const Contact = () => {
                 </button>
               </form>
               {msg && (
-              <p className={`mt-4 text-center text-sm font-semibold ${msg.startsWith("✅") ? "text-red-400" : "text-green-400"}`}>
-                {msg}
-              </p>
-            )}
+                <p
+                  className={`mt-4 text-center text-sm font-semibold ${
+                    msg.startsWith("✅") ? "text-red-400" : "text-green-400"
+                  }`}
+                >
+                  {msg}
+                </p>
+              )}
             </div>
           </div>
         </div>
