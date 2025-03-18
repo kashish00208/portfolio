@@ -16,6 +16,7 @@ const Contact = () => {
     message: "",
   });
   const [msg, SetMsg] = useState("");
+  const [loading,setLoading] = useState(false);
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -28,7 +29,7 @@ const Contact = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-
+    setLoading(true);
     const templateParams = {
       to_name: "Kashish",
       name: formData.name,
@@ -45,6 +46,7 @@ const Contact = () => {
       )
       .then(() => {
         SetMsg("Email sent"); 
+        setLoading(false);
         setFormData({
           name: "",
           email: "",
@@ -115,21 +117,12 @@ const Contact = () => {
                 <br />
 
                 <button
-                  type="submit"
+                  type="submit" disabled={loading}
                   className="w-full bg-orange-600 bg-opacity-50 my-5 p-2 rounded-xl"
                 >
-                  Submit
+                 {loading ?"sending":"Submit"}
                 </button>
               </form>
-              {msg && (
-                <p
-                  className={`mt-4 text-center text-sm font-semibold ${
-                    msg.startsWith("✅") ? "text-red-400" : "text-green-400"
-                  }`}
-                >
-                  {msg}
-                </p>
-              )}
             </div>
           </div>
         </div>
