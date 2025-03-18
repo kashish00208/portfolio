@@ -45,8 +45,7 @@ const Contact = () => {
           email: "",
           message: "",
         });
-        console.log("Succes in sending email")
-        ,()=>{
+        ()=>{
           SetMsg("Failed in sending msg try again later");
         }
       });
