@@ -1,6 +1,7 @@
 "use client";
 import Intro from "../components/Intro";
 import emailjs from "@emailjs/browser";
+import { error } from "console";
 
 import React, { useState, ChangeEvent, FormEvent } from "react";
 interface FormData {
@@ -16,6 +17,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [msg, SetMsg] = useState("");
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -29,25 +31,28 @@ const Contact = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
 
+    const templateParams = {
+      to_name: "Kashish",
+      name: formData.name, 
+      reply_to: formData.email, 
+      message: formData.message,
+    };
+    console.log("Sending email with:", templateParams);
     emailjs
-      .sendForm(
-        "contact_service",
-        "contact_form",
-        e.target as HTMLFormElement,
-        key
-      )
-      .then(
-        () => {
-          setFormData({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error: Error) => {
-          console.log("FAILED...", error);
+      .send("service_5j1ksxd", "template_bjmjd5a", templateParams, "Lvp-xlQeDpx0Sn1_u")
+      .then(() => {
+        SetMsg("Email sent");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+        SetMsg("")
+        console.log("Succes in sending email")
+        ,()=>{
+          SetMsg("Failed in sending msg try again later");
         }
-      );
+      });
   };
 
   return (
@@ -59,7 +64,7 @@ const Contact = () => {
         <div className="flex-1 md:ml-96 md:mt-20 md:text-start">
           <div className="md:ml-10 lg:ml-10">
             <p className="text-white text-5xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold">
-            Lets work
+              Lets work
             </p>
 
             <p className="text-white text-4xl sm:text-4xl md:text-5xl lg:text-7xl text-opacity-50">
@@ -115,6 +120,11 @@ const Contact = () => {
                   Submit
                 </button>
               </form>
+              {msg && (
+              <p className={`mt-4 text-center text-sm font-semibold ${msg.startsWith("✅") ? "text-red-400" : "text-green-400"}`}>
+                {msg}
+              </p>
+            )}
             </div>
           </div>
         </div>
