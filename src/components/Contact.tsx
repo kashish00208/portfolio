@@ -15,7 +15,6 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [msg, SetMsg] = useState("");
   const [loading,setLoading] = useState(false);
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -45,7 +44,6 @@ const Contact = () => {
         "Lvp-xlQeDpx0Sn1_u"
       )
       .then(() => {
-        SetMsg("Email sent"); 
         setLoading(false);
         setFormData({
           name: "",
@@ -54,7 +52,7 @@ const Contact = () => {
         });
       })
       .catch(() => {
-        SetMsg("Failed in sending msg, try again later"); 
+        console.log("Failed in sending msg, try again later"); 
       });
   };
 
