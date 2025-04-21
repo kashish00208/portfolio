@@ -34,10 +34,16 @@ const page = () => {
                     src: "/project2.jpg",
                   },
                   {
+                    title: "BetterGift",
+                    description: "Gift recommendation Web application",
+                    href: "https://better-gift.vercel.app/",
+                    src: "/better.jpeg",
+                  },
+                  {
                     title: "HelperBot",
                     description: "AI powered Chatbot",
                     href: "https://github.com/kashish00208/chatbot",
-                    src: "/project3.jpg",
+                    src: "/project3.jpeg",
                   },
                   {
                     title: "WeatherWave",
@@ -50,6 +56,12 @@ const page = () => {
                     description: "Portfolio Web",
                     href: "https://github.com/kashish00208/portfolio",
                     src: "/project4.jpg",
+                  },
+                  {
+                    title: "TaskSync",
+                    description: "Task management system ",
+                    href: "https://task-sync-lemon.vercel.app/",
+                    src: "/proj-3.jpeg",
                   },
 
                 ].map((project, index) => (
