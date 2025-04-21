@@ -58,6 +58,12 @@ const page = () => {
                     src: "/project4.jpg",
                   },
                   {
+                    title: "Blogsphere",
+                    description: "Blog posting web app",
+                    href: "https://github.com/kashish00208/blogSphere",
+                    src: "/blog.jpeg",
+                  },
+                  {
                     title: "TaskSync",
                     description: "Task management system ",
                     href: "https://task-sync-lemon.vercel.app/",
